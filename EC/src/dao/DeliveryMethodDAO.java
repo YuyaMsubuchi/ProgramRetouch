@@ -110,7 +110,7 @@ public class DeliveryMethodDAO {
 					+ " FROM t_buy"
 					+ " JOIN m_delivery_method"
 					+ " ON m_delivery_method.id = t_buy.delivery_method_id"
-					+ " WHERE t_buy.id = ?");
+					+ " WHERE t_buy.id = ? ");
 			st.setInt(1, buyId);
 
 			ResultSet rs = st.executeQuery();
